@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Client</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1 class="h1 bg-zinc-500 text-white text-4xl text-center p-4">Add your text here</h1>
+    <form id="text-form" class="border max-w-xl w-full mx-auto p-3">
+      <label for="text-title" class="block text-xl pb-2">Title:</label>
+      <input class="border outline-none p-2 w-full mb-3" type="text" id="text-title" placeholder="Write text here . . ." required>
+      <label for="text-description" class="block text-xl pb-2">Description:</label>
+      <textarea class="border outline-none p-2 w-full h-52" id="text-description" placeholder="Write description here . . ." required></textarea>
+      <button type="submit" class="border w-full mt-5 p-3 text-xl bg-zinc-500 text-white hover:bg-zinc-600">Add text</button>
+    </form>
+    <ul id="text-list" class="border max-w-lg w-full ml-2 p-3 mt-4">
+      <li class="text-xl text-center text-zinc-400 select-none">Here will show your text that you add.</li>
+    </ul>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
